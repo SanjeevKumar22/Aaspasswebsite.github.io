@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous"
+/>
+<style>
+   *{
+      padding: 0px;
+      margin: 0px;
+   }
+   body{
+      background: #ccc;
+   }
+
+   .head{
+      width: 100%; 
+   
+   }
+   .head h1{
+       padding: 0px 40px;
+      line-height: 100px;
+      font-size: 50px;
+      color:red;
+      background: white;
+      font-family: sans-serif;
+      font-style: oblique;
+      text-align: center;
+      background-color: rgb(255, 212, 102);
+    }
+
+   .head .nav{
+      background: rgb(98, 209, 253);
+      padding: 10px 0px;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+
+   }
+   .nav li{
+          list-style-type: none;
+          display: inline-block;
+          padding: 10px 40px;
+          text-align: center;
+          border-left: 1px solid white;
+          color: black;
+          font-size: 18px;
+          font-style: italic;
+   }
+
+   * {box-sizing: border-box}
+   body {font-family: Verdana, sans-serif; margin:0}
+   /* Slideshow container */
+.slideshow-container {
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  width: auto;
+  padding: 30px;
+  margin-top: -160px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 200px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+   padding: 3px 3px 3px 3px;
+  cursor: pointer;
+  height: 10px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+img {vertical-align: middle;
+    padding-top: 60px;
+}
+.bg-green-light {
+    background-color:rgb(171, 171, 247);
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+.py-5 {
+    padding-bottom: 3rem!important;
+}
+
+.about-section {
+    font-family: Maison Nueue Bold,sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.matter{
+    text-align: center;
+    color: brown;
+    margin-top: 5;
+    padding-top: 50px;
+}
+
+p {
+    margin-top: 3;
+    margin-bottom: 1rem;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-style: italic;
+}
+
+.mb-3 {
+    margin-bottom: 1rem!important;
+}
+
+.w3-wide{
+    text-align: left;
+}
+
+.w3-justify{
+    text-align: justify;
+    padding: 20px 30px 20px 30px;
+}
+
+/*FOOTER*/
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content{
+    border: 1px solid red;
+    height: 350px;
+    padding: 50px;
+}
+
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-section h2{
+    margin-bottom: 2rem;
+    color: rgba(206, 7, 7, 0.918);
+}
+
+.footer-section a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.footer-section a:hover{
+    color:lightskyblue;
+    transition: 0.3s ease-out;
+}
+
+.footer-email-form h2{
+    margin-bottom: 2rem;
+}
+
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+    color: #b1b1b1;
+}
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #F9423D;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: #337AF1;
+    transition: all 0.4s ease-out;
+}
+
+/*footer*/
+#main-footer {
+  background: fixed;
+  background-color: #24262b;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer-content {
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.social .fab {
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+  line-height: 50px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="head">
+        <div class="title"><h1>Aaspass</h1></div>     
+        <div class="nav" id="nav">
+           <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Life@Aaspass</li>
+              <li>Blogs&News</li>
+           </ul>
+        </div>
+    </div>
+     <section>
+     <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="picture1.png" style="width:100%" height="500">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="pic1 (4).jpg" style="width:100%"  height="500">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="pic1 (5).jpg" style="width:100%"  height="500">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="cod.jpg" style="width:100%"  height="500">
+          <div class="text">Caption Three</div>
+        </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+          </div>
+    </section>
+        
+        <br>
+        
+        <div class="bg-green-light text-white py-5">
+            <div class="about-section mb-3">
+                <h2 class="matter">About Us</h2>
+                <p class="w3-justify">AasPass can change the way people sell, buy and order groceries, it lets you access your city/town like never before. An app that connects & enables the nearest delivery partner who can deliver any daily needed items from any store of your choice in the city and bring them to you.
+                It’s never easy to make purchases or drop off packages when you get busy with work, get stuck in traffic, or you might even end up forgetting about it completely for consumers.It’s never easy to make purchases or maintain records of items in-store when you have many offline customers at your store or shop you might even end up forgetting about it completely for the Storekeeper / Shop keeper.
+            </p>
+            </div>
+        </div>  
+
+    <!-- footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Company</h2>
+                <a href="#">About Us</a>
+                <a href="#">Our Services</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Affiliate Program</a>
+            </div>
+            <div class="footer-section about">
+                <h2>GetHelp</h2>
+                <a href="#">FAQ</a>
+                <a href="#">Payments</a>
+                <a href="#">Shipping</a>
+                <a href="#">Order Status</a>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Social Media</h2>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <div class="footer-email-form">
+                <h2>Sign Up</h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="Sign Up" placeholder="Sign Up" id="footer-email-btn">
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            &copy; aaspass.com | Designed by Aaspass
+            <p>Copyright &copy; 2021. All Rights Reserved</p>
+        </div>
+    </div>
+  
+
+    <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>
