@@ -190,3 +190,44 @@ a[class~=color], [class~=block-title] [class~=title] {
 .newsletter-popup {
 	background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* .chat_icon{
+  position:fixed;
+  right: 50px;
+  bottom:0;
+ 
+  cursor:pointer;
+  z-index:1000;
+}
+.img_icon{
+  width:80px;
+}
+.chat_box{
+  position:fixed;
+  right: 50px;
+  bottom:100px;
+  width:400px;
+  height:75vh;
+  background:#dedede;
+  z-index:10001;
+  transition:all 0.3s ease-out;
+  transform:scaleY(0);
+}
+.chat_box.active{
+  transform:scaleY(1);
+  
+}
+#messages{
+	padding: 20px;
+}
+.my-conv-form-wrapper textarea{
+	height: 30px;
+	overflow: hidden;
+	resize: none;
+}
+.hidden{
+	display: none !important;
+} */
+#WAButton{
+  z-index:1000;
+}
