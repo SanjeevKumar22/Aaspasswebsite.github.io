@@ -23,80 +23,45 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
         <!-- Style Css -->
         <link rel="stylesheet" href="css/style.css"/>
+        <!--new code-->
+        <link rel="stylesheet" href="newstyle.css">
+        <link rel="stylesheet" href="newresponsive.css">
     </head>
     <body>
-        <!--  Navbar Start  -->
-
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <!-- Brand -->
-                <img src="img/hdlogo.png" width="18%" height="5%">
-               
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler mr-3 mb-lg-3 ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-<!-- <span class="navbar-toggler-icon"></span> -->
-                    <i class="fas fa-bars"></i>
-                </button>
-                    
-                
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <!--New navbar-->
+        <nav class="navbar background h-nav-resp">
+            <div id="main" class="topnav v-class-resp">
+                <img src="logo2.png" alt="None" width="180" height="80">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
         </nav>
-        <!--  Navbar End  -->
-
+<section class="header">
+    <video autoplay loop class="video-background" muted plays-inline>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="welcome-msg">
+        <img src="logo2.png" alt="None" width="350" height="200">
+    </div>
+</section>
         <!-- Home Section Start -->
-        <section class="home d-flex align-items-center" id="home">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-7">
-                        <div class="home-text">
-                            <h1>Best Mobile App for Business</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                                                                                                                                                                                mollitia, molestiae quas vel sint commodi repudiandae
-                                                                                                                                                                                consequuntur voluptatum laborum numquam blanditiis harum
-                                                                                                                                                                                quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                                                                                                                                                                                eaque rerum! Provident similique accusantium nemo autem.
-                            </p>
-                            <div class="home-btn">
-                                <a href="#" class="btn btn-1">
-                                    <i class="fab fa-google-play"></i>
-                                    Download app</a>
-                                <button type="button" class="btn btn-1 video-play-button">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-5 text-center">
-                        <div class="home-img">
-                            <div class=""></div>
-                            <img src="img/app-screenshots/1.png" alt="AasPass App"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="header home d-flex align-items-center" id="home">
+           <video autoplay loop class="video-background" muted plays-inline>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="welcome-msg">
+        <img src="logo2.png" alt="None" width="350" height="200">
+    </div>
         </section>
         <!-- Home Section End -->
 
