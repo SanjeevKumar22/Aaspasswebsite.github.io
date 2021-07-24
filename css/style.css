@@ -66,6 +66,7 @@ ul {
   background-color: var(--main-color);
 }
 /* Responsive */
+/*
 @media(max-width: 991px){
   .navbar-toggler{
     background-color: var(lightblue);
@@ -77,8 +78,7 @@ ul {
     color: #ffffff;
   }
 }
-
-
+*/
 
 @keyframes spin_01 {
   0% {
@@ -111,7 +111,7 @@ ul {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
-
+/*
 .navbar {
   background-color: #051930;
   padding: 0.15px 0;
@@ -155,14 +155,14 @@ ul {
 .navbar .nav-item .nav-link:hover::before {
   transform: scale(1);
 }
-
+*/
 /*
 Home Section
 */
 .home {
   min-height: 100vh;
   padding: 150px 0;
-  background-color: #051930;
+  /*background-color: #051930;*/
   /* border-radius: 0 0 300px 0; */
 }
 .home-text h1 {
@@ -392,7 +392,6 @@ section .section-title h2 span {
 
 /* Pricing Table Start */
 
-
 /* *{
     margin: 0;
     padding: 0;
@@ -403,118 +402,107 @@ body{
     font-size: 14px;
 
 } */
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 15px;
-    margin: 50px;
-    padding: 0px 20px;
-
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin: 50px;
+  padding: 0px 20px;
 }
-.pricing-table{
-   box-shadow: 0px 0px 18px #ccc;
-   text-align: center;
-   padding: 30px 0px;
-   border-radius: 5px;
-   position: relative;
- 
+.pricing-table {
+  box-shadow: 0px 0px 18px #ccc;
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+  position: relative;
 }
 .pricing-table .head {
-    border-bottom:1px solid #eee;
-    padding-bottom: 50px;
-    transition: all 0.5s ease;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+  transition: all 0.5s ease;
 }
-.pricing-table:hover .head{
-   border-bottom:1px solid #051930;
-   
-}
-
-.pricing-table .head .title{
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 700;
+.pricing-table:hover .head {
+  border-bottom: 1px solid #051930;
 }
 
-.pricing-table .content .price{
-    background:linear-gradient(to right, #051930 0%, #051930 100%);
-    width: 90px;
-    height: 90px;
-    margin: auto;
-    line-height: 90px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0px 0px 10px #ccc;
-    margin-top: -50px;
-     transition: all 0.5s ease;
-}
-.pricing-table:hover .content .price{
-    transform: scale(1.2);
- 
+.pricing-table .head .title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-
+.pricing-table .content .price {
+  background: linear-gradient(to right, #051930 0%, #051930 100%);
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  line-height: 90px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: -50px;
+  transition: all 0.5s ease;
+}
+.pricing-table:hover .content .price {
+  transform: scale(1.2);
+}
 
 .pricing.featured .listing-badges {
-    position: absolute;
-    top: 0;
-    z-index: 999;
-    right: 0;
-    width: 100%;
-    display: block;
-    font-size: 15px;
-    padding: 0;
-    overflow: hidden;
-    height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  right: 0;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  padding: 0;
+  overflow: hidden;
+  height: 100px;
 }
 
 .pricing.featured .featured {
-    float: left;
-    transform: rotate(-45deg);
-    left: -67px;
-    top: 17px;
-    position: relative;
-    text-align: center;
-    width: 200px;
-    font-size: 13px;
-    margin: 0;
-    padding: 7px 10px;
-    font-weight: 500;
-    color: #fff;
+  float: left;
+  transform: rotate(-45deg);
+  left: -67px;
+  top: 17px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  font-size: 13px;
+  margin: 0;
+  padding: 7px 10px;
+  font-weight: 500;
+  color: #fff;
 }
 .pricing.featured .featured {
-    background: #f0151f;
+  background: #f0151f;
 }
 
-
-
-
-
-.pricing-table .content .price h1{
-    color:#fff;
-    font-size: 30px;
-    font-weight: 700;
-	margin-top: 19px;
+.pricing-table .content .price h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 19px;
 }
-.pricing-table .content ul{
-   list-style-type: none;
-   margin-bottom: 20px;
-   padding-top: 10px;
+.pricing-table .content ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-top: 10px;
 }
 
-.pricing-table .content ul li{
-    margin: 20px 0px;
-    font-size: 14px;
-    color:#555;
+.pricing-table .content ul li {
+  margin: 20px 0px;
+  font-size: 14px;
+  color: #555;
 }
 
-.pricing-table .content .sign-up{
-    background:linear-gradient(to right, #051930 0%, #051930 100%);
-    border-radius: 40px;
-    font-weight: 500;
-    position: relative;
-    display: inline-block;
+.pricing-table .content .sign-up {
+  background: linear-gradient(to right, #051930 0%, #051930 100%);
+  border-radius: 40px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
 }
-
 
 .pricing-table .btn {
   color: #fff;
@@ -530,14 +518,13 @@ body{
   text-transform: capitalize;
   position: relative;
   text-decoration: none;
-    margin: 2px;
-    z-index: 9999;
-    text-decoration: none;
-    border-radius:50px;
- 
+  margin: 2px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 50px;
 }
 
-.pricing-table .btn:hover{
+.pricing-table .btn:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -545,8 +532,8 @@ body{
   z-index: 50;
   color: #333;
 }
-.pricing-table:hover .btn.bordered{
-  color:#fff !important;
+.pricing-table:hover .btn.bordered {
+  color: #fff !important;
 }
 
 .pricing-table .btn.bordered:after {
@@ -561,96 +548,93 @@ body{
   -moz-transition: all 0.3 linear;
   transition: all 0.3 linear;
   width: 100%;
-  z-index: -1;  
-  -webkit-transform:scale(1);
-  -moz-transform:scale(1);
-  transform:scale(1);
+  z-index: -1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
 }
-.pricing-table:hover .btn.bordered:after{
-  opacity:0;
-  transform:scale(0);
-}
-
-@media screen and (max-width:768px){
-   .wrapper{
-        grid-template-columns: repeat(2,1fr);
-    } 
+.pricing-table:hover .btn.bordered:after {
+  opacity: 0;
+  transform: scale(0);
 }
 
-@media screen and (max-width:600px){
-   .wrapper{
-        grid-template-columns: 1fr;
-    } 
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 /* Pricing Table End */
 
-
 /* Contact section start */
-.contact{
-	background-color: var(--black-100);
+.contact {
+  background-color: var(--black-100);
 }
-.contact-info h3{
-	font-size: 22px;
-	color: var(--black-900);
-	font-weight: 500;
-	margin: 0 0 40px;
+.contact-info h3 {
+  font-size: 22px;
+  color: var(--black-900);
+  font-weight: 500;
+  margin: 0 0 40px;
 }
-.contact-info-item{
-	position: relative;
-	padding-left: 55px;
-	margin: 30px;
+.contact-info-item {
+  position: relative;
+  padding-left: 55px;
+  margin: 30px;
 }
-.contact-info-item i{
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	left: 0;
-	top: 0;
-	border-radius: 50%;
-	font-size: 16px;
-	color: var(--main-color);
-	border: 1px solid var(--main-color);
-	text-align: center;
-	line-height: 38px;
+.contact-info-item i {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  text-align: center;
+  line-height: 38px;
 }
-.contact-info-item h3{
-	font-size: 18px;
-	font-weight: 400;
-	margin: 0 0 10px;
-	color: var(--black-900);
+.contact-info-item h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  color: var(--black-900);
 }
-.contact-info-item p{
-	font-size: 16px;
-	font-weight: 300;
-	margin: 0;
-	line-height: 26px;
-	color: var(--black-400);
+.contact-info-item p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 26px;
+  color: var(--black-400);
 }
-.contact-form .form-group{
-	margin-bottom: 25px;
+.contact-form .form-group {
+  margin-bottom: 25px;
 }
-.contact-form .form-control{
-	height: 52px;
-	border: 1px solid transparent;
-	box-shadow: var(--shadow-black-100);
-	border-radius: 30px;
-	padding: 0 24px;
-	color: var(--black-900);
-	background-color: var(--black-000);
-	transition: all 0.5s ease;
+.contact-form .form-control {
+  height: 52px;
+  border: 1px solid transparent;
+  box-shadow: var(--shadow-black-100);
+  border-radius: 30px;
+  padding: 0 24px;
+  color: var(--black-900);
+  background-color: var(--black-000);
+  transition: all 0.5s ease;
 }
-.contact-form textarea.form-control{
-	height: 140px;
-	padding-top: 12px;
-	resize: none;
+.contact-form textarea.form-control {
+  height: 140px;
+  padding-top: 12px;
+  resize: none;
 }
-.contact-form .form-control:focus{
-	border-color: var(--main-color);
+.contact-form .form-control:focus {
+  border-color: var(--main-color);
 }
 
 /* Contact section end */
-
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -797,7 +781,6 @@ body{
   border: 0px;
   padding: 6px 8px;
   width: 65%;
-
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
